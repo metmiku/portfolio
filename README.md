@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# My Personal Portfolio Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio site! This repository contains the source code for my online portfolio, showcasing my skills, projects, and experiences in software development and graphics design.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio site is designed to provide visitors with an insight into my work and background. It features a clean, modern design that is responsive and user-friendly, ensuring a great experience on both desktop and mobile devices.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Showcase of Projects:** A dedicated section highlighting my key projects, including descriptions and technologies used.
+- **About Me:** A brief introduction about who I am, my background, and my professional journey.
+- **Skills:** A comprehensive list of my technical skills and tools that I am proficient in.
+- **Contact Information:** Easy access for potential employers or collaborators to reach out.
+- **Smooth Animations:** Enhanced user experience with animations powered by Framer Motion.
+- **Responsive Design:** Fast and customizable styling using Tailwind CSS.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React:** For building the user interface.
+- **Framer Motion:** For smooth, interactive animations.
+- **Tailwind CSS:** For utility-first styling and responsive design.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To run this project locally, follow these steps:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/metmiku/portfolio.git
+
+2. Install the dependencies:
+   ```bash
+   npm install
+3. Start the development server:
+  ```bash
+   npm run dev
