@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+		<script>
+			try {
+				let theme = localStorage.getItem('theme');
+				if (
+					theme === 'dark' ||
+					(!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+				) {
+					document.documentElement.classList.add('dark');
+				} else if (theme === 'light') {
+					document.documentElement.classList.remove('dark');
+				}
+			} catch (e) {}
+		</script>
+	</head>
+
+	<body
+		class="font-body selection:bg-bg-primary-dark selection:text-primary-light dark:selection:bg-bg-primary-light dark:selection:text-primary-dark"
+		data-sveltekit-preload-data="hover"
+	>
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

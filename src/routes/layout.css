@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--color-celadon: #afd5aa;
+	--color-mauve-shadow: #533747;
+	--color-stormy-teal: #1a5e63;
+	--color-surface: #f8faf9;
+	--color-on-surface: #1a5e63;
+	--color-primary: #1a5e63;
+	--color-secondary: #533747;
+	--color-tertiary: #4a7a45;
+	--color-surface-container: #eff3f0;
+	--color-surface-container-high: #e4e9e5;
+	--color-surface-container-low: #f1f5f2;
+	--color-outline-variant: #d1d9d2;
+	--color-on-surface-variant: #5b6b5d;
+
+	--font-headline: 'Space Grotesk', sans-serif;
+	--font-body: 'Manrope', sans-serif;
+	--font-label: 'Inter', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+
+	--color-primary-light: var(--color-stormy-teal);
+	--color-primary-dark: var(--color-celadon);
+	--color-secondary-light: var(--color-mauve-shadow);
+	--color-secondary-dark: var(--color-celadon);
+	--color-link-light: var(--color-stormy-teal);
+	--color-link-dark: var(--color-celadon);
+	--color-icon-light: var(--color-stormy-teal);
+	--color-icon-dark: var(--color-celadon);
+	--color-success-light: oklch(79% 0.209 151.711);
+	--color-success-dark: oklch(79% 0.209 151.711);
+	--color-danger-light: oklch(71% 0.194 13.428);
+	--color-danger-dark: oklch(71% 0.194 13.428);
+	--color-warning-light: oklch(85% 0.199 91.936);
+	--color-warning-dark: oklch(85% 0.199 91.936);
+
+	--color-bg-primary-light: var(--color-surface);
+	--color-bg-primary-dark: #0d1511;
+	--color-bg-secondary-light: var(--color-surface-container);
+	--color-bg-secondary-dark: #14211a;
+	--color-bg-tertiary-light: var(--color-surface-container-high);
+	--color-bg-tertiary-dark: #1d2b23;
+	--color-bg-quaternary-light: var(--color-surface-container-low);
+	--color-bg-quaternary-dark: #0f1a15;
+}
+
+@layer base {
+	body {
+		@apply bg-bg-primary-light text-primary-light transition-colors duration-300;
+	}
+	.dark body {
+		@apply bg-bg-primary-dark text-primary-dark;
+	}
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 24;
+}
+.scanline {
+	background: linear-gradient(to bottom, transparent 50%, rgba(175, 213, 170, 0.05) 50%);
+	background-size: 100% 4px;
+	pointer-events: none;
+}
+.ide-border {
+	border: 1px solid #d1d9d2;
+}
+.dark .ide-border {
+	border-color: #2a3a33;
+}
+.dark .text-on-surface {
+	color: #e0e3e1;
+}
+.dark .text-on-surface-variant {
+	color: #aebdb2;
+}
+.dark .border-outline-variant {
+	border-color: #3f4e45;
+}
