@@ -41,7 +41,23 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Developer Metmiku</title>
+	<title>Metmiku Yohannes | Software Engineer</title>
+	<meta name="title" content="Metmiku Yohannes | Software Engineer" />
+	<meta name="description" content="Portfolio of Metmiku Yohannes, a Software Engineer and Full Stack Developer specializing in Go, Rust, TypeScript, Svelte, and Next.js." />
+	<meta name="keywords" content="Metmiku Yohannes, Software Engineer, Full Stack Developer, Svelte, Go, Rust, Addis Ababa, Ethiopia" />
+	<meta name="author" content="Metmiku Yohannes" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://metmiku.site/" />
+	<meta property="og:title" content="Metmiku Yohannes | Software Engineer" />
+	<meta property="og:description" content="Portfolio of Metmiku Yohannes. Building high-performance, scalable systems." />
+	<meta property="og:image" content="https://metmiku.site/og-image.png" />
+
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://metmiku.site/" />
+	<meta property="twitter:title" content="Metmiku Yohannes | Software Engineer" />
+	<meta property="twitter:description" content="Portfolio of Metmiku Yohannes. Building high-performance, scalable systems." />
+	<meta property="twitter:image" content="https://metmiku.site/og-image.png" />
 </svelte:head>
 <Header />
 <main class="mx-auto max-w-7xl px-6 pt-20 pb-24 md:px-12">

@@ -82,10 +82,13 @@
 				<HugeiconsIcon icon={Sun03Icon} size={20} color="currentColor" />
 			{/if}
 		</button>
-		<button
+		<a
+			href="/Metmiku_Yohannes.pdf"
+			target="_blank"
+			rel="noopener noreferrer"
 			class="bg-primary-light px-4 py-1.5 font-headline text-[10px] font-bold tracking-widest text-bg-primary-light uppercase transition-all hover:bg-secondary-light active:scale-95 md:block dark:bg-primary-dark dark:text-bg-primary-dark dark:hover:bg-secondary-dark"
 		>
 			Resume
-		</button>
+		</a>
 	</div>
 </header>
